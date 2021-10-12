@@ -30,6 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   image_picker: ^0.8.4+2
   flutter_signin_button: ^2.0.0
+  google_sign_in: ^4.0.0
+  firebase_auth: ^0.8.0+1
 
 dev_dependencies:
   flutter_test:
@@ -76,3 +78,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+module:
+  androidX: true # Add this line.
