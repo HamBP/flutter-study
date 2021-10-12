@@ -4,6 +4,9 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 class AccountPage extends StatelessWidget {
   final GoogleSignIn _googleSignIn = GoogleSignIn();
+  final FirebaseUser user;
+
+  AccountPage(this.user);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +40,7 @@ class AccountPage extends StatelessWidget {
                         height: 96.0,
                         child:
                         CircleAvatar(
-                          backgroundImage: NetworkImage('https://source.unsplash.com/user/erondu/1600x900'),
+                          backgroundImage: NetworkImage(user.photoUrl),
                         ),
                       ),
                       Container(
